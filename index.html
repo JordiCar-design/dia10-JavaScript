@@ -6,9 +6,87 @@
     <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script>
+    // Això és un comentari curt dins 
+    // de JavaScript en un fitxer HTML
+    // console.log('Abans del body')
+    var elMeuNom = "Jordi"
+    console.log("El contingut de la variable és",
+    elMeuNom, " i el tipus de la variable és",
+    typeof elMeuNom
+    )
+// Fent typeof indica el tipus de la variable, 
+// que en aquest cas és string. I si posem la primera 
+// lletra en majúscula canvia el tipus de la variable
+
+    var laMevaEdat = "55"
+    var elTipusDeVariableDeLaMevaEdat = typeof (laMevaEdat)
+    console.log("Contingut", laMevaEdat)
+    console.log("Tipus", elTipusDeVariableDeLaMevaEdat)
+// Cal fer la segona variable perquè sigui un string
+// console.log és perquè imprimeixi el resultat
+
+
+    var edat = 55
+    console.log(edat, typeof edat)
+    var edat2030 = edat + 8
+    console.log("El 2030 tindré", edat2030, ' anys')
+
+    var elTipusDeVariableDeLaMevaEdat
+    // typeof(edat)
+
+    var tipus = typeof(edat)
+
+    function suma(a, b){
+        return a + b
+    }
+
+    suma(10, 20)
+    // var resultat = suma(10, 20)
+    console.log(suma(300, 12))
+
+    // alert(suma(12, 3))
+    // alert("Hola")
+
+    // L'alert és un tipus de funció que no et retorna
+    // res sinó que simplement t'ho mostra. 
+    // I si se'n posa + d'un els va mostrant successivament
+
+    function mostraInformacio(laVariable)
+    {
+        console.log('Contingut:', laVariable)
+        console.log('Tipus:', typeof(laVariable))
+    }
+
+    var variable1 = "Jordi"
+    var variable2 = 13
+    var variable3 = false
+
+    mostraInformacio(variable1)
+    mostraInformacio(variable2)
+    mostraInformacio(variable3)
+
+    // Per ser funció sempre s'han dobrir i tancar les claus,
+    // i es creen per tal d'escriure menys codi
+
+    var suma2 = function(a,b){
+        console.log('dins la variable')
+        return a+b
+    }
+
+    // console.clear() és una funció que serveix per netejar la cònsola
+    mostraInformacio(suma)
+
+    suma(20,11)
+
+
+</script>
 <body>
     <h1>
         Dia 10
     </h1>
 </body>
+<script>
+    // console.log('Després del body')
+</script>
 </html>
