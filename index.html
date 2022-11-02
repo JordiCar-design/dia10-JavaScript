@@ -56,6 +56,9 @@
     {
         console.log('Contingut:', laVariable)
         console.log('Tipus:', typeof(laVariable))
+
+        let esArray = Array.isArray(laVariable)
+        console.log('És array:',esArray)
     }
 
     var variable1 = "Jordi"
@@ -74,11 +77,19 @@
         return a+b
     }
 
-    // console.clear() és una funció que serveix per netejar la cònsola
+    console.clear() // és una funció que serveix per netejar la cònsola
     mostraInformacio(suma)
 
     suma(20,11)
 
+    var noms = ["jordi", "pere", "laura"] // Això és un array
+    var persona = { // Això és un objecte
+        nom:'Jordi',
+        dni:'40444999'
+    }
+    mostraInformacio(noms)
+    mostraInformacio(persona)
+    
 
 </script>
 
