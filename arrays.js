@@ -30,11 +30,16 @@ function demoArrays(){
 
     var numeros = [34, 12, 10, 2]
     var total = 0
+    console.log("Abans del sumatori")
+    numeros.forEach(sumatori)
+    console.log("Després del sumatori")
 
     numeros.forEach(suma)
 
     function sumatori(valor, index, llista){
+        console.log("Dins del sumatori")
         console.log(valor, index, llista)
+        total = total + valor
 
     }
 
