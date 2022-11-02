@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="utilitats.js"></script>
+    <script src="arrays.js"></script>
+     <!-- Aquí el que es fa és cridar els arxius utilitats i arrays de JS -->
+
 </head>
+
 <script>
     // Això és un comentari curt dins 
     // de JavaScript en un fitxer HTML
     // console.log('Abans del body')
+
     var elMeuNom = "Jordi"
     console.log("El contingut de la variable és",
     elMeuNom, " i el tipus de la variable és",
@@ -30,7 +37,7 @@
     var edat = 55
     console.log(edat, typeof edat)
     var edat2030 = edat + 8
-    console.log("El 2030 tindré", edat2030, ' anys')
+    console.log("El 2030 tindré", edat2030, 'anys')
 
     var elTipusDeVariableDeLaMevaEdat
     // typeof(edat)
@@ -52,14 +59,7 @@
     // res sinó que simplement t'ho mostra. 
     // I si se'n posa + d'un els va mostrant successivament
 
-    function mostraInformacio(laVariable)
-    {
-        console.log('Contingut:', laVariable)
-        console.log('Tipus:', typeof(laVariable))
-
-        let esArray = Array.isArray(laVariable)
-        console.log('És array:',esArray)
-    }
+    
 
     var variable1 = "Jordi"
     var variable2 = 13
@@ -77,7 +77,7 @@
         return a+b
     }
 
-    console.clear() // és una funció que serveix per netejar la cònsola
+    // console.clear() és una funció que serveix per netejar la cònsola
     mostraInformacio(suma)
 
     suma(20,11)
@@ -89,7 +89,10 @@
     }
     mostraInformacio(noms)
     mostraInformacio(persona)
-    
+
+    prova()
+
+    demoArrays()
 
 </script>
 

@@ -1,0 +1,8 @@
+
+/* Amb aquest estil marquem el color i li diem a l'HTML que li posi aquest color*/
+
+html{
+    color:grey;
+    font-family: 'Gill Sans', 'Calibri', 'Trebuchet MS';
+}
+
