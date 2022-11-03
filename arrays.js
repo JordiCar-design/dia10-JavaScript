@@ -42,6 +42,83 @@ function demoArrays(){
         total = total + valor
 
     }
+    console.clear()
+
+    // Tema loops, que serveixen per iterar
+
+    var lletres = ["a","b","c","d"]
+    var i = 0
+
+    for(i; i <100;i = i + 2)
+    {
+        console.log("posicio",i)
+
+    }
+
+    // posicio++ és igual a posicio = posicio + 1
+    // El for ens serveix per iterar
+
+    for(var posicio=0;posicio<lletres.length;posicio++){
+
+        console.log(posicio)
+        console.log(lletres[posicio])
+    }
+
+    console.clear()
+
+
+    function informacio(valor, posicio, arrayOriginal){
+        console.log(posicio)
+        console.log(valor)
+    }
+    function senseRes(){
+        console.log('hola')
+    }
+
+        function ambElValor(elValor){
+            console.log(elValor)
+
+
+        }
+
+    lletres.forEach(informacio)
+    lletres.forEach(senseRes)
+    lletres.forEach(ambElValor)
+    // lletres.forEach(ambElValorDeLaPosicio)
+
+    lletres.forEach(function(val){
+        console.log(val)
+
+    })
+
+    var lletres2=[   // El llistat es pot fer en una sola línia o com aquest:
+        "a",
+        "b",
+        "c"
+    ]
+
+    var excel = [
+        ["Nom", "Edat", "és soci", "telèfon"],
+        ["Jordi", 55, true,"404444999"],
+        ["Adelaida", 45, false, "898989889"],
+        ["Laura", 34, true, "353537589"]
+    ]
+
+    function mostraInfoExcel(fila, pos, original){
+            console.log(original)
+        if(pos == 0){  // Dos signes == és per dir igual; diferent és !=
+            console.log("Estem a la fila 0")
+        }else{
+            console.log("No estem a la fila 0")
+            console.log(fila,pos)
+            console.log("Nom soci:", fila[0])
+            console.log("Edat", fila[1])
+            console.log(original[0][0], fila[0])
+
+
+        }
+    }
+
+    excel.forEach(mostraInfoExcel)
 
 }
-
