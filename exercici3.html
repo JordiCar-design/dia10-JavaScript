@@ -27,8 +27,18 @@ function contaTextes(el,pos){
 
 }
 
-coses.forEach(contaTextes)
+function contaNumeros(el, pos){
+    // Mirem el tipus
+    var tipus = typeof(el)
+    if(tipus == 'number'){
+        numeroDeNumeros++
+    }
+}
 
+coses.forEach(contaTextes)
+coses.forEach(contaNumeros)
+
+console.log(numeroDeTextes)
         /*
         coses.forEach(function(element, posicio){
             // Mirem si és un string
