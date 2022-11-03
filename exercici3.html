@@ -11,9 +11,7 @@
         var numeroDeTextes = 0;
         var numeroDeNumeros = 0;
         var noms = ["Jordi", "Laura", "Dani", "Sandra"]; // Array
-            
-
-
+        
         var numeros = [3, 2, 3, 3, 6]; // Array 
 
         // Comptar els textes
@@ -21,6 +19,27 @@
 
         // Fer 2 arrays, un amb els textes 
         // i l'altre amb els números
+
+function contaTextes(el,pos){
+    if(typeof(el) == 'string'){
+        numeroDeTextes = numeroDeTextes + 1
+    }
+
+}
+
+coses.forEach(contaTextes)
+        /*
+        coses.forEach(function(element, posicio){
+            // Mirem si és un string
+            if(typeof(element) == 'string'){ // Aquí cometes simples
+                // Augmentem el comptador
+                numeroDeTextes = numeroDeTextes +1
+
+            }
+        }
+        
+        
+        )
 
 
 
