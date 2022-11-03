@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+          // Trobar la posició de l'element "Laura" 
+
+        // Es crea un array amb noms
+        var noms = ["Jordi", "Dani", "Laura", "Eva"]
+
+
+        noms.forEach(function(el,pos){
+            if(el === "Laura"){
+                console.log("La posició de Laura és ", pos)
+            }
+
+        })    
+        
+// Considera que la posició de Laura és la segona perquè
+// comença a comptar des de 0 i després vénen l'1 i el 2
+
+// Aquesta de sota és una altra manera de fer-ho:
+
+        var posicio = noms.indexOf("Laura");
+
+        console.log("La posició de Laura és ", posicio)
+
+// Aquí hi ha 3 = i és més estricte i es fixa
+// en si hi ha cometes o no, per exemple
+
+        if(4=="4"){
+            console.log("Poc estricte")
+        }
+
+        if(4==="4"){
+            console.log("Molt estricte")
+        }
+
+    </script>
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
